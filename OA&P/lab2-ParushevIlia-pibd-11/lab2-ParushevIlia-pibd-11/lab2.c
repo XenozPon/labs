@@ -6,10 +6,46 @@
 //	scanf_s("%d", &b);
 //	if (a > b) printf("%d",a); else printf("%d",b);
 //}
-// 
-
-
-
+//2.1.2
+//void main() {
+//	int v1, v2, v3;
+//	SetConsoleCP(65001);
+//	SetConsoleOutputCP(65001);
+//	printf("Введите 3 числа: ");
+//	scanf_s("%d%d%d", &v1, &v2, &v3);
+//	if (v2 > v1) v1 = v2;
+//	if (v3 > v1) v1 = v3;
+//	printf("max = %d", v1);
+//}
+//2.1.3
+//void main() {
+//	int v;
+//	SetConsoleCP(65001);
+//	SetConsoleOutputCP(65001);
+//	scanf_s("%d", &v);
+//	if (v < 18) printf("Холодно");
+//	if (v >= 18 && v<22) printf("прохладно");
+//	if (v >= 22 && v < 26) printf("тепло");
+//	if (v >= 26) printf("жарко");
+//}
+//2.1.4
+//void main() {
+//	SetConsoleCP(65001);
+//	SetConsoleOutputCP(65001);
+//	int a, b, c, d, e;
+//	printf("Введите 5 чисел: \n");
+//	scanf_s("%d", &a);
+//	scanf_s("%d", &b);
+//	scanf_s("%d", &c);
+//	scanf_s("%d", &d);
+//	scanf_s("%d", &e);
+//	int max = a;
+//	if (b > max) max = b;
+//	if (c > max) max = c;
+//	if (d > max) max = d;
+//	if (e > max) max = e;
+//	printf("%d - максимальное число", max);
+//}
 //2.1.5
 //3. Температура на берегу Байкала зимой
 // Нереальные значения: ниже -100°C или выше 20°C
@@ -22,7 +58,7 @@
 //void main() {
 //	SetConsoleCP(65001);
 //	SetConsoleOutputCP(65001);
-//	printf("Введите температуру в градусах цельсиях, допустимые значения от -90 до 20 градусов цельсия включительно\n");
+//	printf("Введите температуру на берегу Байкала в градусах цельсия, допустимые значения от -90 до 20 градусов цельсия включительно\n");
 //	float t;
 //	scanf_s("%f", &t);
 //	if (t > 20 || t < -100) {
@@ -161,7 +197,7 @@
 //	printf("N = ");
 //	scanf_s("%d", &n);
 //	i = 0;
-//	a = 1;
+//	a = 0;
 //	do {
 //		a++;
 //		if (a % 2 == 0)
@@ -209,20 +245,20 @@
 //    printf("\n");
 //}
 //2.2.7 Студент первого курса работает стажёром в «СимбирСофт» и копит на Toyota Corolla 2022 года
-//void main() {
-//	SetConsoleCP(65001);
-//	SetConsoleOutputCP(65001);
-//	int c = 1600000;
-//	int zp = 55000;
-//	int n, i, a,b;
-//	a = 0;
-//	i = 0;
-//	printf("Введите число N месяцев откладывания, чтобы видеть накопленную сумму и остаток\nN = ");
-//	scanf_s("%d", &n);
-//	do {
-//		a += zp;
-//		b = c - a;
-//		printf("%d - накопленная сумма, осталось накопить: %d\n", a, b);
-//		i++;
-//	} while (i < n);
-//}
+void main() {
+	SetConsoleCP(65001);
+	SetConsoleOutputCP(65001);
+	int c = 1600000;
+	int zp = 55000;
+	int n, i, a,b;
+	a = 0;
+	i = 0;
+	printf("Введите число N месяцев откладывания, чтобы увидеть накопленную сумму и остаток для покупки студентом автомобиля Toyota Corolla 2022 года\nN = ");
+	scanf_s("%d", &n);
+	do {
+		a += zp;
+		b = c - a;
+		i++;
+		printf("%d - накопленная сумма за %d месяц(а/ев), осталось накопить: %d\n", a,i,b);
+	} while (i < n);
+}
