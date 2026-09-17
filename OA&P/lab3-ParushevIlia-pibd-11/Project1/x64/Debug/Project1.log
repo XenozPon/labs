@@ -1,0 +1,4 @@
+﻿  lab3.c
+D:\repos\labs\OA&P\lab3-ParushevIlia-pibd-11\Project1\lab3.c(6,2): warning C4013: SetConsoleCP: нет определения; предполагается "extern" с возвратом типа "int"
+D:\repos\labs\OA&P\lab3-ParushevIlia-pibd-11\Project1\lab3.c(7,2): warning C4013: SetConsoleOutputCP: нет определения; предполагается "extern" с возвратом типа "int"
+  Project1.vcxproj -> D:\repos\labs\OA&P\lab3-ParushevIlia-pibd-11\x64\Debug\Project1.exe
